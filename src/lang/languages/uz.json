@@ -16,5 +16,10 @@
       "products": "Mahsulotlarimiz",
       "news": "Yangiliklar"
     }
+  },
+  "product": {
+    "top": "Bizning top tovarlarimiz",
+    "question": "Savollaringiz bormi?",
+    "sent": "Yuborish"
   }
 }

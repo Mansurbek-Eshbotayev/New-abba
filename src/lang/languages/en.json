@@ -16,5 +16,10 @@
       "products": "Our products",
       "news": "News"
     }
+  },
+  "product": {
+    "top": "Our top products",
+    "question": "Do you have any questions?",
+    "sent": "Sending"
   }
 }

@@ -5,13 +5,15 @@ import Smist2 from "../../assets/images/icons/pro2.png";
 import { ExitIcon, FilterIcon } from "../../assets/images/img/img";
 import { NavLink, Route, Routes } from "react-router-dom";
 import Logo from "../../assets/images/icons/site logo.svg";
+import { useTranslation } from "react-i18next";
 
 export const OurProduct = () => {
+  const { t } = useTranslation();
   return (
     <div className="product">
       <div className="header-container">
         <div className="product__top top">
-          <h2 className="top__title">Bizning top tovarlarimiz</h2>
+          <h2 className="top__title">{t("product.top")}</h2>
           <div className="top__info">
             <div className="top__wrap">
               <button className="top__filter">
@@ -113,7 +115,7 @@ export const OurProduct = () => {
           <div className="down__question question">
             <div className="question__info">
               <img className="question__img" src={Logo} alt="site logo" />
-              <h2 className="question__title">Savollaringiz bormi?</h2>
+              <h2 className="question__title">{t("product.question")}</h2>
               <form
                 className="question__form"
                 action="https://echo.htmlacademy.ru/courses"
@@ -133,7 +135,7 @@ export const OurProduct = () => {
                   aria-label="Your name"
                 />
 
-                <button className="question__btn">Yuborish</button>
+                <button className="question__btn">{t("product.sent")}</button>
               </form>
             </div>
           </div>

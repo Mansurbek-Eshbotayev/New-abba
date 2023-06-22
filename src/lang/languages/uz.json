@@ -1,0 +1,20 @@
+{
+  "header": {
+    "nav": {
+      "about": "Biz haqimizda",
+      "kalkulator": "Kalkulyator",
+      "story": "Bizning do'konlarimiz",
+      "why": "Nega biz?",
+      "sertify": "Bizning sertifikatlarimiz",
+      "call": "Tezkor aloqa",
+      "catalog": "Katalog",
+      "radiators": "Radiatorlar",
+      "smesitel": "Mikser",
+      "bath": "Vanna",
+      "toilet": "Holo",
+      "custom": "No odatiy buyurtma",
+      "products": "Mahsulotlarimiz",
+      "news": "Yangiliklar"
+    }
+  }
+}

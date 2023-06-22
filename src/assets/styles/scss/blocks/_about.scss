@@ -1,0 +1,122 @@
+.about {
+  background-color: $white;
+  padding-bottom: 86px;
+  @include media-min {
+    padding-bottom: 0px;
+    padding: 83px 0 53px 0;
+  }
+  .about__inner {
+    @include media-min {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .about__left {
+      width: 100%;
+      max-width: 507px;
+    }
+    .about__title {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 130%;
+      color: $green;
+      margin-bottom: 18px;
+      @include media-min {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 22px;
+      }
+    }
+    .about__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      color: $green;
+      margin-bottom: 18px;
+      @include media-min {
+        display: none;
+      }
+    }
+
+    .about__img {
+      width: 100%;
+      max-width: 507px;
+      border-radius: 7.34237px;
+      margin-bottom: 18px;
+      @include media-min {
+        display: none;
+      }
+    }
+
+    .about__text--margin {
+      margin-bottom: 24px;
+    }
+
+    .about__text--block {
+      display: none;
+      @include media-min {
+        display: block;
+        margin-bottom: 48px;
+        padding-right: 25px;
+      }
+    }
+
+    .about__box {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .about__link {
+      font-family: "Mulish";
+      font-style: normal;
+      padding: 10px 15px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 140%;
+      color: $white;
+      background-color: $green;
+      border-radius: 21.5px;
+      margin-right: 15px;
+    }
+
+    .about__link--video {
+      font-style: normal;
+      font-weight: 400;
+      color: $green;
+      padding: 11px 21px;
+      border-radius: 21.5px;
+      background-color: #ebebeb;
+      display: flex;
+      align-items: center;
+      svg {
+        margin-left: 11px;
+      }
+    }
+
+    .about__link--icon {
+      display: none;
+      border-radius: 100px;
+      padding: 0;
+      padding: 11px 13px 10px 13px;
+      background-color: #f2f2f2;
+      @include media-min {
+        display: block;
+      }
+    }
+
+    .about__right {
+      .left__img {
+        display: none;
+        width: 100%;
+        @include media-min {
+          display: block;
+        }
+      }
+    }
+  }
+}

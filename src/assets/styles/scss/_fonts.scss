@@ -1,0 +1,67 @@
+@font-face {
+  font-display: swap;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../assets/fonts/mulish-v12-latin-regular.woff2")
+      format("woff2"),
+    url("../../../assets/fonts/mulish-v12-latin-regular.ttf") format("truetype");
+}
+/* mulish-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../../assets/fonts/mulish-v12-latin-500.woff2") format("woff2"),
+    url("../../../assets/fonts/mulish-v12-latin-500.ttf") format("truetype");
+}
+/* mulish-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../../assets/fonts/mulish-v12-latin-600.woff2") format("woff2"),
+    url("../../../assets/fonts/mulish-v12-latin-600.ttf") format("truetype");
+}
+/* mulish-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../../assets/fonts/mulish-v12-latin-700.woff2") format("woff2"),
+    url("../../../assets/fonts/mulish-v12-latin-700.ttf") format("truetype");
+}
+/* mulish-800 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../../assets/fonts/mulish-v12-latin-800.woff2") format("woff2"),
+    url("../../../assets/fonts/mulish-v12-latin-800.ttf") format("truetype");
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../assets/fonts/inter-v12-latin-regular.woff2")
+      format("woff2"),
+    url("../../../assets/fonts/inter-v12-latin-regular.ttf") format("truetype");
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../assets/fonts/roboto-v30-latin-regular.woff2")
+      format("woff2"),
+    url("../../../assets/fonts/roboto-v30-latin-regular.ttf") format("truetype");
+}

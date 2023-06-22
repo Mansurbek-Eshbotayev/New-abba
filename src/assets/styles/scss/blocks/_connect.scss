@@ -1,0 +1,194 @@
+.connect {
+  padding-bottom: 27px;
+  background-color: $white;
+  @include media-min {
+    padding-bottom: 155px;
+  }
+
+  .connect__inner {
+    @include media-min(1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .connect__info {
+      padding: 15px 14px;
+      border-radius: 12px;
+      background-color: $green;
+      margin-bottom: 24px;
+      @include media-min {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+      }
+      @include media-min(1200px) {
+        margin-bottom: 0px;
+        margin-right: 20px;
+      }
+    }
+
+    .info__lift {
+      margin-bottom: 25px;
+      text-align: center;
+      width: 100%;
+      max-width: 461px;
+      @include media-min {
+        text-align: start;
+        padding: 32px 35px 33px 22px;
+        background-image: url(../../images/icons/shadow.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0px;
+      }
+      @include media-min(1400px) {
+        padding: 40px 35px 40px 22px;
+      }
+    }
+
+    .info__title {
+      color: $white;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 130%;
+      margin-bottom: 25px;
+      @include media-min {
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 90px;
+      }
+    }
+
+    .info__icon {
+      @include media-min(1400px) {
+        display: flex;
+        align-items: center;
+        // flex-wrap: wrap;
+      }
+    }
+
+    .icon__tel {
+      display: none;
+      color: $white;
+      padding: 14px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 11.82px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(6px);
+      margin-bottom: 18px;
+      @include media-min {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      @include media-min(1400px) {
+        // width: 100%;
+        margin-bottom: 0;
+      }
+    }
+    .icon__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon__item {
+      margin-right: 19px;
+      &:last-child {
+        margin-right: 0;
+      }
+      @include media-min {
+        margin-right: 14px;
+      }
+    }
+
+    .icon__link {
+      padding: 15px 10px 6px 10px;
+      border-radius: 1621.174px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .info__right {
+      @include media-min {
+        padding: 24px;
+      }
+    }
+
+    .right__form {
+      width: 100%;
+      max-width: 332px;
+      margin: 0 auto;
+      @include media-min {
+        max-width: 302px;
+      }
+    }
+
+    .right__input {
+      width: 100%;
+      border: none;
+      padding: 19px 26px;
+      border-radius: 13.192px;
+      background-color: #1b5851;
+      color: $white;
+      font-size: 15.391px;
+      line-height: 24.632px;
+      margin-bottom: 25px;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.69);
+      }
+      @include media-min {
+        margin-bottom: 14px;
+      }
+    }
+
+    .right__sent {
+      width: 100%;
+      color: $green;
+      text-align: center;
+      padding: 17px 20px;
+      font-size: 17.589px;
+      font-weight: 800;
+      border-radius: 13.192px;
+      background-color: $white;
+    }
+
+    .connect__box {
+      width: 100%;
+      max-width: 534px;
+    }
+
+    .information__title {
+      width: 100%;
+      max-width: 201px;
+      color: $green;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 130%;
+      margin-bottom: 18px;
+      @include media-min {
+        max-width: 100%;
+        font-size: 55.491px;
+        font-weight: 700;
+        line-height: 59.386px;
+        letter-spacing: -1.291px;
+        margin-bottom: 32px;
+      }
+    }
+
+    .information__text {
+      width: 100%;
+      max-width: 400px;
+      color: $green;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 120%;
+      @include media-min {
+        max-width: 100%;
+        font-size: 16px;
+      }
+    }
+  }
+}

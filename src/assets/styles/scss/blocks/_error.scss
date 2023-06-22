@@ -1,0 +1,50 @@
+.error {
+  background-color: $white;
+  padding-bottom: 50px;
+
+  .error__inner {
+    width: 100%;
+    max-width: 722px;
+    margin: 0 auto;
+
+    .error__img {
+      width: 100%;
+      margin-bottom: 60px;
+    }
+
+    .error__text {
+      color: $green;
+      text-align: center;
+      text-align: center;
+      font-size: 32px;
+      font-family: Roboto;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 45px;
+    }
+
+    .error__box {
+      display: flex;
+      justify-content: center;
+    }
+
+    .error__btn {
+      color: $white;
+      border: none;
+      text-align: center;
+      font-size: 21.67px;
+      font-family: Roboto;
+      font-weight: 500;
+      border-radius: 30.699px;
+      padding: 10px 20px;
+      background: #0e504b;
+      display: flex;
+      align-items: center;
+      svg {
+        width: 20px;
+        height: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

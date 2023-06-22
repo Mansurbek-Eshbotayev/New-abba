@@ -1,0 +1,175 @@
+.carousel {
+  padding-bottom: 60px;
+
+  .carousel__item {
+    // overflow-x: hidden;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 18px 24px 100px 24px;
+    background-image: url(../../images/icons/smistitel.png);
+    background-repeat: no-repeat;
+    border-radius: 12px;
+
+    @include media-min(1024px) {
+      max-width: 1453px;
+      padding: 19px 36px 35px 36px;
+      background-image: url(../../images/icons/big-smis.png);
+      background-position: center;
+      // background-size: contain;
+    }
+  }
+
+  .carousel__title {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: $white;
+    margin-bottom: 24px;
+    span {
+      display: none;
+    }
+    @include media-min(1024px) {
+      width: 100%;
+      max-width: 612px;
+      font-size: 40px;
+      line-height: 64px;
+      span {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: 10px;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .carousel__span {
+    display: inline-block;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    color: $green;
+    background-color: $white;
+    border-radius: 61.5525px;
+    margin-bottom: 24px;
+    @include media-min(1024px) {
+      display: none;
+    }
+  }
+
+  .carousel__text {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $white;
+    margin-bottom: 20px;
+    @include media-min(1024px) {
+      width: 100%;
+      max-width: 700px;
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 53px;
+    }
+  }
+
+  .carousel__link {
+    display: inline-block;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 7px 25px;
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 100px;
+  }
+
+  .slick-next {
+    display: none !important;
+  }
+  .slick-prev {
+    display: none !important;
+  }
+
+  .slick-dots {
+    @include media-min(1024px) {
+      display: none !important;
+    }
+  }
+}
+
+.swiper__card {
+  .card__list {
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    @include media-min {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+  }
+
+  .card__item {
+    width: 100%;
+    max-width: 348px;
+    height: 100%;
+    height: 130px;
+    padding: 12px;
+    &:nth-child(1) {
+      background-image: url(../../images/icons/sim1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &:nth-child(2) {
+      background-image: url(../../images/icons/aim2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &:nth-child(3) {
+      background-image: url(../../images/icons/sim3.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &:nth-child(4) {
+      background-image: url(../../images/icons/sim1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @include media-min {
+      height: 240px;
+      padding: 12px 24px;
+    }
+  }
+
+  .card__tetle {
+    width: 100%;
+    max-width: 200px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: $green;
+
+    @include media-min {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}

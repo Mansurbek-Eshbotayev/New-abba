@@ -1,0 +1,247 @@
+.smestitel {
+  padding: 40px 0 50px 0;
+  background-color: $white;
+
+  @include media-min {
+    padding: 135px 0 175px 0;
+  }
+  @include media-min(1000px) {
+    background-image: url(../../images/icons/bigsmis.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 450px) calc(50% - 50px);
+  }
+
+  .smestitel__inner {
+    width: 100%;
+    max-width: 832px;
+    .smestitel__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 130%;
+      color: $green;
+      margin-bottom: 18px;
+      @include media-min {
+        display: none;
+      }
+    }
+
+    .smestitel__title--smis {
+      display: none;
+
+      @include media-min {
+        display: block;
+        font-size: 45px;
+        line-height: 38px;
+        margin-bottom: 22px;
+      }
+    }
+
+    .smestitel__text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      color: $green;
+      margin-bottom: 55px;
+      @include media-min {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 50px;
+      }
+    }
+
+    .smestitel__list {
+      margin-bottom: 24px;
+      @include media-min {
+        width: 100%;
+        max-width: 600px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start;
+        // gap: 44px;
+      }
+    }
+
+    .smestitel__item {
+      margin-bottom: 30px;
+      @include media-min {
+        width: 100%;
+        max-width: 270px;
+        margin-bottom: 44px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .smestitel__link {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16.3312px;
+      line-height: 21px;
+      color: $green;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 34px;
+        height: 34px;
+        background-image: url(../../images/icons/icno1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        margin-right: 33px;
+        @include media-min {
+          width: 50px;
+          height: 37px;
+          margin-right: 14px;
+        }
+      }
+    }
+
+    .smestitel__link--two {
+      position: relative;
+      &::before {
+        background-image: url(../../images/icons/icno2.png);
+      }
+    }
+    .smestitel__link--thre {
+      position: relative;
+      &::before {
+        background-image: url(../../images/icons/icno3.png);
+      }
+    }
+    .smestitel__link--four {
+      position: relative;
+      &::before {
+        background-image: url(../../images/icons/icno4.png);
+      }
+    }
+    .smestitel__link--five {
+      display: none;
+      position: relative;
+      &::before {
+        background-image: url(../../images/icons/icno5.png);
+      }
+      @include media-min {
+        display: block;
+      }
+    }
+    .smestitel__link--six {
+      display: none;
+      position: relative;
+      &::before {
+        background-image: url(../../images/icons/icno6.png);
+      }
+      @include media-min {
+        display: block;
+      }
+    }
+
+    .smistitel__img {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      margin-bottom: 66px;
+      @include media-min {
+        display: none;
+      }
+    }
+
+    .smistitel__prise {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 12px 10px;
+      background: $green;
+      border-radius: 9.76712px;
+      position: relative;
+      @include media-min {
+        max-width: 737px;
+        padding: 24px 24px 38px 24px;
+        margin: 0;
+        border-radius: 20px;
+      }
+      &::after {
+        content: "";
+        width: 123px;
+        height: 107px;
+        background-image: url(../../images/icons/tez.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -31px;
+        right: -10px;
+        @include media-min {
+          width: 327px;
+          height: 313px;
+          top: -67px;
+          right: -31px;
+        }
+      }
+    }
+
+    .prise__title {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 38px;
+      display: flex;
+      align-items: center;
+      color: $white;
+      margin-bottom: 10px;
+      @include media-min {
+        font-size: 35.0898px;
+        line-height: 67px;
+        margin-bottom: 18px;
+      }
+    }
+
+    .smistitel__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: $white;
+      @include media-min {
+        width: 100%;
+        max-width: 440px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.smestitel {
+  .smestitel__list--price {
+    margin-bottom: 54px !important;
+  }
+
+  .smistitel__img--sms {
+    position: relative;
+    right: -20px;
+    margin-bottom: 0px;
+    margin-bottom: 52px !important;
+    @include media-min {
+      display: none;
+    }
+  }
+}
+
+.price {
+  padding: 0 0 20px 0;
+  @include media-min {
+    padding: 30px 0 100px 0;
+  }
+  @include media-min(1000px) {
+    background-image: url(../../images/icons/bigbath.png);
+    background-size: 1031px 700px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 500px) calc(50% - 15px);
+  }
+}

@@ -1,0 +1,407 @@
+.product {
+  padding: 60px 0;
+
+  @include media-min {
+    padding: 100px 0 175px 0;
+  }
+
+  .product__top {
+    margin-bottom: 60px;
+    @include media-min {
+      margin-bottom: 120px;
+    }
+  }
+
+  .top__title {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: $green;
+    margin-bottom: 18px;
+    @include media-min {
+      line-height: 38px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .top__info {
+    margin-bottom: 25px;
+
+    @include media-min {
+      display: none;
+    }
+    .top__wrap {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .top__filter {
+      font-family: "Mulish";
+      font-style: normal;
+      padding: 4px 14px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 135%;
+      color: $green;
+      border: none;
+      background-color: $white;
+      border-radius: 86px;
+      display: flex;
+      align-items: center;
+      margin-right: 16px;
+      svg {
+        margin-right: 8px;
+      }
+    }
+
+    .otop__text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 8px;
+      line-height: 38px;
+      color: $green;
+      opacity: 0.6;
+      @include media-min(350px) {
+        font-size: 12px;
+      }
+      @include media-min(407px) {
+        font-size: 16px;
+      }
+    }
+
+    .top__mini {
+      display: flex;
+      align-items: center;
+    }
+
+    .mini__btn {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 35px;
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      border: none;
+      color: $white;
+      background-color: $green;
+      border-radius: 7.37931px;
+      svg {
+        margin-left: 10px;
+      }
+      &:nth-child(1) {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .top__information {
+    display: none;
+    width: 100%;
+    padding-bottom: 32px;
+    @include media-min {
+      display: block;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      display: inline-block;
+      background-color: $green;
+      opacity: 0.15;
+    }
+    .information__list {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .information__item {
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .nav__link {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 38px;
+      padding: 6px 20px;
+      color: $green;
+      background-color: #ebf2f1;
+      border: 1px solid $green;
+      border-radius: 8px;
+    }
+    .otop__text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 38px;
+      display: flex;
+      align-items: center;
+      color: $green;
+      opacity: 0.6;
+    }
+  }
+
+  .product__list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    @include media-min(650px) {
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+    }
+
+    @include media-min(1200px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .product__item {
+      width: 100%;
+      max-width: 357px;
+      padding: 8px 7px;
+      background-color: $white;
+      border-radius: 5.38521px;
+    }
+    .product__img {
+      width: 100%;
+      margin-bottom: 6px;
+      @include media-min {
+        margin-bottom: 11px;
+      }
+    }
+    .product__title {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 100%;
+      display: flex;
+      align-items: center;
+      color: $green;
+      margin-bottom: 6px;
+      @include media-min {
+        font-size: 18px;
+        line-height: 38px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .product__span {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 26px;
+      display: flex;
+      align-items: center;
+      color: $green;
+      margin-bottom: 6px;
+      @include media-min {
+        margin-bottom: 37px;
+      }
+    }
+
+    .product__box {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .product__link {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17.0458px;
+      line-height: 17px;
+      padding: 9px 27px;
+      color: $green;
+      background-color: #f3f3f3;
+      margin-right: 8px;
+      border-radius: 5.73719px;
+
+      @include media-min(1220px) {
+        padding: 9px 50px;
+      }
+    }
+
+    .product__btn {
+      border: none;
+      padding: 5px 7px;
+      background-color: #f3f3f3;
+      border-radius: 5.73719px;
+    }
+  }
+
+  .product__down {
+    .down__info {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 24px;
+      background-color: $green;
+      border-radius: 12px;
+
+      @include media-min {
+        display: none;
+      }
+
+      .info__top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+
+      .down__img {
+        width: 145px;
+        height: 42px;
+        margin-right: 20px;
+      }
+
+      .info__span {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19.932px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: $white;
+      }
+
+      .info__text {
+        width: 100%;
+        max-width: 380px;
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        color: $white;
+        margin-bottom: 24px;
+      }
+
+      .info__detal {
+        width: 100%;
+        max-width: 380px;
+        padding: 15px 12px;
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        color: $white;
+        background-color: $light-green;
+        border-radius: 5.4654px;
+        margin-bottom: 16px;
+      }
+      .info__detal--margin {
+        margin-bottom: 25px;
+      }
+
+      .info__sumari {
+        list-style: none;
+      }
+
+      .info__btn {
+        border: none;
+        font-family: "Mulish";
+        padding: 15px 25px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: $green;
+        background: $white;
+        border-radius: 11.2872px;
+      }
+    }
+    .down__question {
+      width: 100%;
+      max-width: 1455px;
+      margin: 0 auto;
+      padding: 38px 42px 56px 42px;
+      background-image: url(../../images/icons//question.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 16px;
+      display: none;
+      @include media-min {
+        display: block;
+      }
+      .question__info {
+        width: 100%;
+        max-width: 360px;
+
+        .question__img {
+          width: 83px;
+          height: 33px;
+          margin-bottom: 45px;
+        }
+
+        .question__title {
+          font-family: "Mulish";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 20px;
+          line-height: 25px;
+          text-transform: capitalize;
+          color: $white;
+          margin-bottom: 27px;
+        }
+
+        .question__input {
+          width: 100%;
+          padding: 21px 28px;
+          border: none;
+          background-color: #1b5851;
+          border-radius: 14.3046px;
+          font-family: "Mulish";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16.6887px;
+          line-height: 27px;
+          color: $white;
+          margin-bottom: 16px;
+          &::placeholder {
+            font-family: "Mulish";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16.6887px;
+            line-height: 27px;
+            color: rgba(255, 255, 255, 0.69307);
+          }
+        }
+        .question__btn {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          font-family: "Mulish";
+          padding: 19px 0;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 19.0728px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: $green;
+          background-color: $white;
+          border-radius: 14.3046px;
+        }
+      }
+    }
+  }
+}

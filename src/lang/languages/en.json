@@ -1,0 +1,20 @@
+{
+  "header": {
+    "nav": {
+      "about": "About us",
+      "kalkulator": "Calculator",
+      "story": "Our stores",
+      "why": "Why us?",
+      "sertify": "Our certificates",
+      "call": "Contact",
+      "catalog": "Catalog",
+      "radiators": "Radiators",
+      "smesitel": "Smesitel",
+      "bath": "Bath",
+      "toilet": "Toilet",
+      "custom": "No custom order",
+      "products": "Our products",
+      "news": "News"
+    }
+  }
+}

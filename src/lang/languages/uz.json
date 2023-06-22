@@ -20,6 +20,11 @@
   "product": {
     "top": "Bizning top tovarlarimiz",
     "question": "Savollaringiz bormi?",
-    "sent": "Yuborish"
+    "sent": "Yuborish",
+    "radiator": "Radiatorlar",
+    "see": "Barchasini ko’rish",
+    "radiators": "Radiatorlarning turlari",
+    "learn": "Batafsil bilish",
+    "detail": "Batafsil video"
   }
 }

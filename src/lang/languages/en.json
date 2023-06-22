@@ -20,6 +20,11 @@
   "product": {
     "top": "Our top products",
     "question": "Do you have any questions?",
-    "sent": "Sending"
+    "sent": "Sending",
+    "radiator": "Radiators",
+    "see": "See all",
+    "radiators": "Types of radiators",
+    "learn": "Learn more",
+    "detail": "Detailed video"
   }
 }

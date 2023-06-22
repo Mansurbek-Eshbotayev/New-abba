@@ -5,14 +5,16 @@ import aris1 from "../../assets/images/icons/arist1.png";
 import aris2 from "../../assets/images/icons/arist2.png";
 import aris3 from "../../assets/images/icons/arist3.png";
 import aris4 from "../../assets/images/icons/arist4.png";
+import { useTranslation } from "react-i18next";
 
 export const Radiators = () => {
+  const { t } = useTranslation();
   return (
     <div className="radoatpr">
       <div className="radiator__top top">
         <div className="radoiator-container">
           <div className="top__left left">
-            <h3 className="left__title">Радиаторлар</h3>
+            <h3 className="left__title">{t("product.radiator")}</h3>
             <p className="left__text">
               ustry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -25,7 +27,7 @@ export const Radiators = () => {
             <div className="left__card">
               <h4 className="left__intro">Уникал дизайндаги радиаторлар</h4>
               <Link className="left__link" to="seeall">
-                Barchasini ko’rish
+                {t("product.see")}
               </Link>
             </div>
           </div>
@@ -36,7 +38,7 @@ export const Radiators = () => {
       </div>
       <div className="radoatpr__down down">
         <div className="rado-container">
-          <h3 className="down__title">Radiatorlarning turlari</h3>
+          <h3 className="down__title">{t("product.radiators")}</h3>
           <ul className="down__list">
             <li className="down__item">
               <img className="down__img" src={aris1} alt="ariston" />

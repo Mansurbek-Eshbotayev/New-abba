@@ -2,14 +2,16 @@ import React from "react";
 import about from "../../assets/images/icons/about__img.png";
 import { Link } from "react-router-dom";
 import { InstaIcon, PlayIcon, TelegramIcon } from "../../assets/images/img/img";
+import { useTranslation } from "react-i18next";
 
 export const About = () => {
+  const { t } = useTranslation();
   return (
     <div className="about">
       <div className="about-container">
         <div className="about__inner">
           <div className="about__left">
-            <h3 className="about__title">Biz haqimizda</h3>
+            <h3 className="about__title">{t("header.nav.about")}</h3>
             <p className="about__text">
               Вас приветствует магазин электроники MacBro. У нас вы можете найти
               всю продукцию Apple. Уже более 14 лет мы консультируем и подбираем
@@ -34,10 +36,10 @@ export const About = () => {
 
             <div className="about__box">
               <Link className="about__link" to="/">
-                Batafsil bilish
+                {t("product.learn")}
               </Link>
               <Link className="about__link about__link--video" to="/">
-                Batafsil video <PlayIcon />
+                {t("product.detail")} <PlayIcon />
               </Link>
               <a
                 className="about__link about__link--icon"
